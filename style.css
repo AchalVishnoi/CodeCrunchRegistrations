@@ -1,0 +1,97 @@
+body {
+    background-image: url(background.jpg); /* Replace with your desired image URL */
+    background-size: cover; /* Make sure the image covers the entire screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    font-family: 'Arial', sans-serif; /* Set a clean, readable font */
+    color: #fff; 
+}
+
+.container {
+    max-width: 700px; 
+    margin: 0 auto;
+
+    background-color:  #112842;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+input{
+    background: transparent;
+}
+
+#member2Form {
+    display: none;
+}
+
+.pcLogo {
+    width: 40px; 
+    margin-right: 10px;
+}
+
+h1.pc {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.Logo{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+input[type="text"], input[type="email"], input[type="tel"], select {
+    background-color:transparent;
+    border: solid #ced4da;
+    border-radius: 4px; 
+    padding: 8px 12px;
+    font-size: 1rem;
+    color: #495057;
+    width: 100%;
+    transition: all 0.3s ease; 
+}
+
+select{
+    background-color: #7188a0;
+
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, select:focus {
+    border-color: #316b9b; 
+    background-color: transparent; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+button#fillMember2 {
+    background-color: #17a2b8;
+    color: #ffffff; 
+    border: none;
+}
+
+button[type="submit"] {
+    background-color: #28a745; 
+    color: #ffffff; 
+    border: none;
+}
+
+button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 1.25rem;
+}
+
+label {
+    font-weight: bold;
+}
