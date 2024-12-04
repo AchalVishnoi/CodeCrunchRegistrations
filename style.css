@@ -8,14 +8,24 @@ body {
 }
 
 .container {
-    max-width: 700px; 
+    max-width: 550px; 
     margin: 0 auto;
+     /* background-image: url(bg2.jpg);
+    background-size: cover;
+    background-position: center;  */
 
     background-color:  #112842;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
 }
+
+.firstContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 input{
     background: transparent;
 }
@@ -44,7 +54,7 @@ h1.pc {
 
 input[type="text"], input[type="email"], input[type="tel"], select {
     background-color:transparent;
-    border: solid #ced4da;
+    border: 1.5px solid #ced4da;
     border-radius: 4px; 
     padding: 8px 12px;
     font-size: 1rem;
@@ -64,6 +74,31 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, se
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
 }
 
+select, input[type="number"] {
+    background-color: transparent !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1.5px solid #ccc;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+input[type="number"]::placeholder, input[type="text"]::placeholder, input[type="email"]::placeholder
+,input[type="tel"]::placeholder,select::placeholder {
+    color: #aaa;
+    opacity: 1;
+}
+
+select:focus, input[type="number"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+
+
+
 button {
     padding: 10px 20px;
     font-size: 1rem;
@@ -71,27 +106,49 @@ button {
 }
 
 button#fillMember2 {
-    background-color: #17a2b8;
+    background-color:  rgb(27, 129, 172);
     color: #ffffff; 
     border: none;
 }
 
 button[type="submit"] {
-    background-color: #28a745; 
+
+    
+    background-color:  rgb(27, 129, 172); 
     color: #ffffff; 
     border: none;
+     width: ;
+
 }
 
 button:hover {
+
     opacity: 0.9;
     cursor: pointer;
 }
 
 h2 {
     margin-top: 20px;
-    font-size: 1.25rem;
+    font-size: 1.4rem;
+    font-weight: bold;
 }
 
 label {
-    font-weight: bold;
+   
+}
+input::placeholder {
+    color: gray;
+    opacity: 0.7;
+}
+
+select {
+    color: gray; 
+}
+
+select option {
+    color: black;
+}
+
+select:invalid {
+    color: gray;
 }

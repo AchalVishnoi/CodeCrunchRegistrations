@@ -11,109 +11,68 @@
 </head>
 <body>
     <div class="container mt-5">
-       <div class="Logo"><h1 class="pc">
-        <img src="pcLogo.webp" alt="PC Logo" class="pcLogo">
-        Programming Club
-    </h1></div> 
-        <h1 class="text-center">Team Registration Form</h1>
+        <div class="Logo">
+            <h1 class="pc">
+                <img src="pcLogo.webp" alt="PC Logo" class="pcLogo">
+                Programming Club
+            </h1>
+        </div>
+        <h1 class="text-center" style="color: rgb(58, 190, 247);">Team Registration Form</h1>
         <form id="teamForm">
             <!-- Year Selection -->
-            <div class="mb-3">
-                <label for="teamYear" class="form-label">Select Year:</label>
-                <select class="form-select" id="teamYear" name="teamYear" required>
-                    <option value="">Select</option>
-                    <option value="2nd Year">2nd Year</option>
-                    <option value="3rd Year">3rd Year</option>
-                </select>
-            </div>
-            <div class="mb-3">
-                <label for="teamName" class="form-label">Team Name:</label>
-                <input type="text" class="form-control" id="teamName" name="teamName" required>
+            <div class="firstContainer" style="margin-top: 20px;">
+                <div class="mb-3">
+                    <label for="teamYear" class="form-label">Select Year:</label>
+                    <select class="form-select" id="teamYear" name="teamYear" required>
+                        <option value="">Select</option>
+                        <option value="2nd Year">2nd Year</option>
+                        <option value="3rd Year">3rd Year</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="teamName" class="form-label">Team Name:</label>
+                    <input type="text" class="form-control" id="teamName" name="teamName" placeholder="Enter your team name" required>
+                </div>
             </div>
 
             <!-- Member 1 Details -->
             <h2 class="mt-4">Member 1 Details</h2>
             <div class="mb-3">
                 <label for="member1Name" class="form-label">Name:</label>
-                <input type="text" class="form-control" id="member1Name" name="member1Name" required>
+                <input type="text" class="form-control" id="member1Name" name="member1Name" placeholder="Enter member's full name" required>
             </div>
             <div class="mb-3">
                 <label for="member1Email" class="form-label">Email:</label>
-                <input type="email" class="form-control" id="member1Email" name="member1Email" required>
+                <input type="email" class="form-control" id="member1Email" name="member1Email" placeholder="Enter member's email address" required>
             </div>
             <div class="mb-3">
                 <label for="member1Phone" class="form-label">Phone:</label>
-                <input type="tel" class="form-control" id="member1Phone" name="member1Phone" required>
+                <input type="tel" class="form-control" id="member1Phone" name="member1Phone" placeholder="Enter member's phone number" required>
             </div>
             <div class="mb-3">
                 <label for="member1Hackerrank" class="form-label">HackerRank ID:</label>
-                <input type="text" class="form-control" id="member1Hackerrank" name="member1Hackerrank" required>
+                <input type="text" class="form-control" id="member1Hackerrank" name="member1Hackerrank" placeholder="Enter HackerRank ID" required>
             </div>
             <div class="mb-3">
                 <label for="member1StudentNo" class="form-label">Student Number:</label>
-                <input type="text" class="form-control" id="member1StudentNo" name="member1StudentNo" required>
+                <input type="number" class="form-control" id="member1StudentNo" name="member1StudentNo" placeholder="Enter student number" required>
             </div>
             <div class="mb-3">
                 <label for="member1Branch" class="form-label">Branch:</label>
-                <input type="text" class="form-control" id="member1Branch" name="member1Branch" required>
+                <input type="text" class="form-control" id="member1Branch" name="member1Branch" placeholder="Enter branch name" required>
             </div>
-            <div class="mb-3">
-                <label for="member1Residency" class="form-label">Residency:</label>
-                <select class="form-select" id="member1Residency" name="member1Residency" required>
-                    <option value="">Select</option>
-                    <option value="Hostel">Hostel</option>
-                    <option value="Day Scholar">Day Scholar</option>
-                </select>
-            </div>
-            <div class="mb-3">
-                <label for="member1Gender" class="form-label">Gender:</label>
-                <select class="form-select" id="member1Gender" name="member1Gender" ;" required>
-                    <option value="">Select</option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                    <option value="Other">Other</option>
-                </select>
-            </div>
-
-            <button type="button" class="btn btn-primary mt-3" id="fillMember2">Fill for Member 2</button>
-
-            <div id="member2Form" class="mt-4">
-                <h2>Member 2 Details</h2>
+            <div class="firstContainer">
                 <div class="mb-3">
-                    <label for="member2Name" class="form-label">Name:</label>
-                    <input type="text" class="form-control" id="member2Name" name="member2Name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="member2Email" class="form-label">Email:</label>
-                    <input type="email" class="form-control" id="member2Email" name="member2Email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="member2Phone" class="form-label">Phone:</label>
-                    <input type="tel" class="form-control" id="member2Phone" name="member2Phone" required>
-                </div>
-                <div class="mb-3">
-                    <label for="member2Hackerrank" class="form-label">HackerRank ID:</label>
-                    <input type="text" class="form-control" id="member2Hackerrank" name="member2Hackerrank" required>
-                </div>
-                <div class="mb-3">
-                    <label for="member2StudentNo" class="form-label">Student Number:</label>
-                    <input type="text" class="form-control" id="member2StudentNo" name="member2StudentNo" required>
-                </div>
-                <div class="mb-3">
-                    <label for="member2Branch" class="form-label">Branch:</label>
-                    <input type="text" class="form-control" id="member2Branch" name="member2Branch" required>
-                </div>
-                <div class="mb-3">
-                    <label for="member2Residency" class="form-label">Residency:</label>
-                    <select class="form-select" id="member2Residency" name="member2Residency" required>
+                    <label for="member1Residency" class="form-label">Residency:</label>
+                    <select class="form-select" id="member1Residency" name="member1Residency" required>
                         <option value="">Select</option>
                         <option value="Hostel">Hostel</option>
                         <option value="Day Scholar">Day Scholar</option>
                     </select>
                 </div>
                 <div class="mb-3">
-                    <label for="member2Gender" class="form-label">Gender:</label>
-                    <select class="form-select" id="member2Gender" name="member2Gender" required>
+                    <label for="member1Gender" class="form-label">Gender:</label>
+                    <select class="form-select" id="member1Gender" name="member1Gender" required>
                         <option value="">Select</option>
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
@@ -122,16 +81,68 @@
                 </div>
             </div>
 
-            <button type="submit" class="btn btn-success mt-3">Submit</button>
+            <button type="button" class="btn btn-primary mt-3" style="display: block;" id="fillMember2">Add Member</button>
+
+            <div id="member2Form" class="mt-4" style="display: none;">
+                <h2>Member 2 Details</h2>
+                <div class="mb-3">
+                    <label for="member2Name" class="form-label">Name:</label>
+                    <input type="text" class="form-control" id="member2Name" name="member2Name" placeholder="Enter member's full name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="member2Email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="member2Email" name="member2Email" placeholder="Enter member's email address" required>
+                </div>
+                <div class="mb-3">
+                    <label for="member2Phone" class="form-label">Phone:</label>
+                    <input type="tel" class="form-control" id="member2Phone" name="member2Phone" placeholder="Enter member's phone number" required>
+                </div>
+                <div class="mb-3">
+                    <label for="member2Hackerrank" class="form-label">HackerRank ID:</label>
+                    <input type="text" class="form-control" id="member2Hackerrank" name="member2Hackerrank" placeholder="Enter HackerRank ID" required>
+                </div>
+                <div class="mb-3">
+                    <label for="member2StudentNo" class="form-label">Student Number:</label>
+                    <input type="number" class="form-control" id="member2StudentNo" name="member2StudentNo" placeholder="Enter student number" required>
+                </div>
+                <div class="mb-3">
+                    <label for="member2Branch" class="form-label">Branch:</label>
+                    <input type="text" class="form-control" id="member2Branch" name="member2Branch" placeholder="Enter branch name" required>
+                </div>
+                <div class="firstContainer">
+                    <div class="mb-3">
+                        <label for="member2Residency" class="form-label">Residency:</label>
+                        <select class="form-select" id="member2Residency" name="member2Residency" required>
+                            <option value="">Select</option>
+                            <option value="Hostel">Hostel</option>
+                            <option value="Day Scholar">Day Scholar</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="member2Gender" class="form-label">Gender:</label>
+                        <select class="form-select" id="member2Gender" name="member2Gender" required>
+                            <option value="">Select</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" style="display: none;" class="btn btn-success mt-3" id="submit">Register</button>
         </form>
     </div>
 
     <script>
         const fillMember2Button = document.getElementById('fillMember2');
         const member2Form = document.getElementById('member2Form');
+        const submit = document.getElementById('submit');
 
         fillMember2Button.addEventListener('click', () => {
             member2Form.style.display = 'block';
+            fillMember2Button.style.display = 'none';
+            submit.style.display = 'block';
         });
     </script>
 </body>
